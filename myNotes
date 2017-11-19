@@ -1,0 +1,63 @@
+
+chaque fois je hange le protocole de communication :
+
+
+-------------------------------------Byte---------------------------------
+
+	-InpputStream(Stream de communication) send data  'byte' by byte to InputStreamReader , 
+		-read():int , write(int c):void
+		-data : files ,...
+
+-------------------------------------String---------------------------------
+	-InpputStream(Stream de communication) send data  'byte' by byte to InputStreamReader , 
+		-read():int , write(int c):void
+		-data : files ,...
+	-InputStreamReader receive it as 'character' (4 bytes ), send it to  BufferedReader  ,
+		 read():int , write(int c):void
+	-BufferedReader( Stream de traitement) read it as 'String'  , 
+		readLine():String , println(String  s):void
+
+
+-------------------------------------Object---------------------------------
+
+Serialistation/Diserialistaion : Objet <=> bytes : 
+
+	ObjectOutputStream ya3ti objeects l OutputStream, 
+	OutputStream yab3ath des bytes  lil reaseau 
+	
+	w 8adi InputStream ye5edh des Bytes 
+	InputStream ya3ti bytes lil ObjectInputStream
+	ObjectInputStream ya3ti l'obj
+
+-------------------------------------Protocoles-Servers---------------------------------
+
+protocoles : definir format de donnees echangees , et definir comment les lire..
+
+todo:
+	regres : msg..
+	ui..
+	exceptions..
+	synchronisation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		  
+		 
